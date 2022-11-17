@@ -27,3 +27,24 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
+choice1 = input("You've reached a crossroad. Do you want to go to the left or to the right? (type 'left' or 'right): ")
+choice1 = choice1.lower()
+# print(choice1)
+if (choice1 != "left"):
+    print("You fell into a hole. Game over.")
+else:
+    choice2 = input("You've reached a river. Do you want to swim or wait? (type 'swim' or 'wait): ")
+    choice2 = choice2.lower()
+    if (choice2 != 'wait'):
+        print("You were attacked by a trout. Game over.")
+    else:
+        choice3 = input("Which door would you like to take? Red, blue, or yellow? (type 'red', 'blue' or 'yellow'): ")
+        choice3 = choice3.lower()
+        if choice3 == 'yellow':
+            print("YOU WIN!!!!")
+        elif (choice3 == 'red'):
+            print("Burned by fire. Game over.")
+        elif (choice3 == 'blue'):
+            print("Eaten by beasts. Game over.")            
+        else:
+            print("Game over")     
